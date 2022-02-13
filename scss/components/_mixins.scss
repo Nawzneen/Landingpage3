@@ -1,0 +1,23 @@
+@use '../custom' as *;
+// Gradient MIXIN
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($gray-600, 0.95)
+  );
+}
+
+// Abosulute center
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// START of PORTFOLIO
+@mixin transitionProperty {
+  transition-duration: 1000ms;
+  transition-property: all;
+}

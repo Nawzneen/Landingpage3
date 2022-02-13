@@ -1,0 +1,101 @@
+@use '../custom' as *;
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: "Grandstander", cursive;
+  &--intro {
+    display: inline-block;
+    font-weight: 700;
+    color: $tertiary;
+    font-family: "Grandstander", cursive;
+  }
+  &--description {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    display: block;
+    color: $cream;
+    text-transform: none;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}
+// HEADING LINE
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  display: block;
+  background-color: $tertiary;
+}
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  padding-top: 0.5rem;
+  display: block;
+  background-color: $primary;
+}
+
+// DISPLAY 3
+
+.display-3 {
+  font-family: "Grandstander", cursive;
+  &--title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    background-image: linear-gradient (to right, $primary, $secondary);
+    background-clip: text;
+    color: black;
+    // -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+      color: black;
+    }
+  }
+}
+
+.display-5 {
+  font-family: "Grandstander", cursive;
+  &--brief {
+    font-family: "Grandstander", cursive;
+  }
+}
+.border-right {
+  border-right: solid $gray-300 0.2rem;
+}
+
+// TESTIMONIALS
+.heading-line-1::after {
+  content: "";
+  width: 8rem;
+  height: 0.1rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  padding-top: 0.5rem;
+  display: block;
+  background-color: $primary;
+}
+
+// GRADIENT BG
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($gray-600, 0.95)
+  );
+}
